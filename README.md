@@ -21,7 +21,7 @@ type RoomStatus struct {
 }
 
 // 實例化 socket
-var socket = abstract.Instance[ConnType, MessageType](5)
+var socket = abstract.Instance[ConnType, MessageType](5) // thread(go runtine) counts
 
 func init()  {
 	// This function is a callback that allows you to store the information into your customized method.
